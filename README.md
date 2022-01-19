@@ -14,11 +14,11 @@
 oscript post_checkout_pre_commit.os install "C:\КаталогСРепозиторием"
 ```
 
-4. Изменить файл env.json в репозиторие, настроить версию 1с, базу, пользовтаеля и блок настройки (каталог исходников в репозиторие и расширение это или конфигурация). Сам файл имеет такую структуру:
+4. Изменить файл env.json в каталоге .git репозитория, настроить версию 1С, базу, пользователя и блок настройки (каталог исходников в репозитории и расширение это или нет). Сам файл имеет такую структуру:
 
 ```
 {
-	"$schema": "https://raw.githubusercontent.com/vanessa-opensource/vanessa-runner/develop/vanessa-runner-schema.json",
+    "$schema": "https://raw.githubusercontent.com/vanessa-opensource/vanessa-runner/develop/vanessa-runner-schema.json",
     "default": {
         "--ibconnection": "/Server\\Base",
         "--db-user": "User",
